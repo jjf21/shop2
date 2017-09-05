@@ -16,7 +16,16 @@ gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
 
+#SOLIDUS
+gem 'solidus'
+gem 'solidus_auth_devise'
+gem 'globalize', github: 'globalize/globalize'
+gem 'solidus_i18n', github: 'solidusio-contrib/solidus_i18n'
+gem 'solidus_globalize', github: 'solidusio-contrib/solidus_globalize'
+
 group :development, :test do
+  gem 'better_errors'
+  gem 'binding_of_caller'
   gem 'pry-byebug'
   gem 'pry-rails'
   gem 'web-console', '>= 3.3.0'

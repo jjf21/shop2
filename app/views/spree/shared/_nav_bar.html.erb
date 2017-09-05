@@ -1,0 +1,16 @@
+<nav id="top-nav-bar" class="columns ten">
+  <ul id="nav-bar" class="inline" data-hook>
+    <li>
+      <%= link_to 'EN', url_for( locale: 'en' ) %>
+    </li>     
+    <li>
+      <%= link_to 'FR', url_for( locale: 'fr' )%>
+    </li>    
+    <li>
+      <%= link_to 'admin', admin_path %>
+    </li>
+    <li id="search-bar" data-hook>
+      <%= render partial: 'spree/shared/search' %>
+    </li>
+  </ul>
+</nav>
